@@ -8,7 +8,6 @@ import {
   Command,
   CommandEmpty,
   CommandGroup,
-  CommandInput,
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
@@ -18,7 +17,17 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-export function Combobox({ items, leading }) {
+interface ComboboxItem {
+  value: string;
+  label: string;
+}
+
+interface ComboboxProps {
+  items: ComboboxItem[];
+  leading?: React.ReactNode;
+}
+
+export function Combobox({ items, leading }: ComboboxProps) {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
 

@@ -15,7 +15,7 @@ export default function Home() {
         className="flex justify-between max-w-[1080px] m-auto py-8 
       border-solid border-gray-200 border-b-2"
       >
-        <h2 className="text-2xl font-bold">Let's do it!</h2>
+        <h2 className="text-2xl font-bold">Let&apos;s do it!</h2>
         <Link href="/take-action">See all</Link>
       </div>
       <TakeAction />

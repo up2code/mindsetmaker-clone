@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sarabun } from "next/font/google";
 import "./globals.css";
 import NavBar from "./(components)/NavBar";
+import Footer from "./(components)/Footer";
 
 const sarabun = Sarabun({
   weight: ["500", "700"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${sarabun.className} antialiased`}>
         <NavBar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

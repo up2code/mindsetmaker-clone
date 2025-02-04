@@ -1,17 +1,23 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import ResourceCard from "./ResourceCard";
 import { ChevronDown } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const ResourceResult = () => {
   return (
     <section>
-      <Image
-        src="/images/all-services.jpg"
-        width={1070}
-        height={283}
-        alt="All resources"
-      />
+      <Suspense
+        fallback={<Skeleton className="w-[100px] h-[20px] rounded-full" />}
+      >
+        <Image
+          className="rounded-md"
+          src="/images/all-services.jpg"
+          width={1200}
+          height={300}
+          alt="All resources"
+        />
+      </Suspense>
       <h3 className="my-6">จำนวนเครื่องมือทั้งหมด: 60 เครื่องมือ</h3>
       <ul className="grid grid-cols-4 gap-4">
         <li>

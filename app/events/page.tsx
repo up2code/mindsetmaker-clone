@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { CalendarDays, Clock, MapPin } from "lucide-react";
+
 const Page = () => {
   return (
     <section className="flex justify-center flex-col">

@@ -1,47 +1,46 @@
 import React from "react";
 import Image from "next/image";
-import clsx from "clsx";
-import TakeAction1 from "@/public/images/home-takeaction-1.png";
-import TakeAction2 from "@/public/images/home-takeaction-2.png";
-import TakeAction3 from "@/public/images/home-takeaction-3.jpg";
-import TakeAction4 from "@/public/images/home-takeaction-4.jpg";
-import TakeAction5 from "@/public/images/home-takeaction-5.jpg";
-import TakeAction6 from "@/public/images/home-takeaction-6.jpg";
+// import TakeAction1 from "@/public/images/home-takeaction-1.png";
+// import TakeAction2 from "@/public/images/home-takeaction-2.png";
+// import TakeAction3 from "@/public/images/home-takeaction-3.jpg";
+// import TakeAction4 from "@/public/images/home-takeaction-4.jpg";
+// import TakeAction5 from "@/public/images/home-takeaction-5.jpg";
+// import TakeAction6 from "@/public/images/home-takeaction-6.jpg";
 import TakeActionPic from "@/public/images/take_action_desktop.png";
 import ExpandingGrid from "./(components)/ExpandingGrid";
 
-const actions = [
-  {
-    image: TakeAction1,
-    name_th: "อารมณ์ดี",
-    name_en: "Good Mood",
-  },
-  {
-    image: TakeAction2,
-    name_th: "จิตใจแข็งแรงดี",
-    name_en: "Resilient Mind",
-  },
-  {
-    image: TakeAction3,
-    name_th: "ความสัมพันธ์ดี",
-    name_en: "Healthy Relationship",
-  },
-  {
-    image: TakeAction4,
-    name_th: "รู้จักตัวเองดี",
-    name_en: "Know Yourself Better",
-  },
-  {
-    image: TakeAction5,
-    name_th: "สำเร็จดี",
-    name_en: "Successful",
-  },
-  {
-    image: TakeAction6,
-    name_th: "หลับดี",
-    name_en: "Better Sleep",
-  },
-];
+// const actions = [
+//   {
+//     image: TakeAction1,
+//     name_th: "อารมณ์ดี",
+//     name_en: "Good Mood",
+//   },
+//   {
+//     image: TakeAction2,
+//     name_th: "จิตใจแข็งแรงดี",
+//     name_en: "Resilient Mind",
+//   },
+//   {
+//     image: TakeAction3,
+//     name_th: "ความสัมพันธ์ดี",
+//     name_en: "Healthy Relationship",
+//   },
+//   {
+//     image: TakeAction4,
+//     name_th: "รู้จักตัวเองดี",
+//     name_en: "Know Yourself Better",
+//   },
+//   {
+//     image: TakeAction5,
+//     name_th: "สำเร็จดี",
+//     name_en: "Successful",
+//   },
+//   {
+//     image: TakeAction6,
+//     name_th: "หลับดี",
+//     name_en: "Better Sleep",
+//   },
+// ];
 
 const TakeAction = () => {
   return (

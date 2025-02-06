@@ -24,7 +24,7 @@ const OursService = () => {
   return (
     <section>
       <h2 className="font-bold text-2xl mb-4">บริการของเรา</h2>
-      <ul className="flex gap-4 justify-between">
+      <ul className="flex gap-4 justify-between flex-wrap">
         {services.map((service) => (
           <li
             key={service.name}

@@ -41,7 +41,7 @@ const supporters = [
 
 const Page = () => {
   return (
-    <>
+    <main>
       <section className="bg-[#F7F2EC] h-[576px] md:h-[380px] w-full">
         <div className="max-w-[1080px] min-w-[360px] w-full m-auto flex flex-col md:flex-row h-full items-center justify-around">
           <div className="text-center md:text-start">
@@ -268,7 +268,7 @@ const Page = () => {
           @mindsetmaker หรือ Email: info@mindsetmaker.co
         </p>
       </section>
-    </>
+    </main>
   );
 };
 

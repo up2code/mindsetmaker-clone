@@ -5,7 +5,7 @@ import SelectResource from "./SelectResource";
 
 const Page = () => {
   return (
-    <main className="max-w-[1070px] m-auto pb-6">
+    <main className="w-full max-w-5xl min-w-[360px] mx-auto pb-6">
       <SelectResource />
       <YoutubeService />
       <OursService />

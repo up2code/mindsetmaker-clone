@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${sarabun.className} antialiased`}>
         <NavBar />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

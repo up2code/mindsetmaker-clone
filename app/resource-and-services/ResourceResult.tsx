@@ -19,7 +19,7 @@ const ResourceResult = () => {
         />
       </Suspense>
       <h3 className="my-6">จำนวนเครื่องมือทั้งหมด: 60 เครื่องมือ</h3>
-      <ul className="grid grid-cols-4 gap-4">
+      <ul className="flex flex-wrap justify-start gap-4">
         <li>
           <ResourceCard />
         </li>

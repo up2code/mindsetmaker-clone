@@ -65,10 +65,15 @@ export default {
           "0%": { opacity: "1" },
           "100%": { opacity: "0" },
         },
+        slideInRight: {
+          "0%": { opacity: "0", transform: "translateX(20%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in forwards",
         "fade-out": "fadeOut 0.5s ease-out forwards",
+        "slide-in-right": "slideInRight 1s ease-out forwards",
       },
     },
   },

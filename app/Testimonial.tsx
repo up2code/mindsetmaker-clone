@@ -1,25 +1,32 @@
 import React from "react";
 import Image from "next/image";
+import PreviewTestimonial01 from "@/public/images/preview_1.jpg";
+import PreviewTestimonial02 from "@/public/images/preview_2.jpg";
+import PreviewTestimonial03 from "@/public/images/preview_3.jpg";
+import Testimonial01 from "@/public/images/testimonial01.jpg";
+import Testimonial02 from "@/public/images/testimonial02.jpg";
+import Testimonial03 from "@/public/images/testimonial03.jpg";
+import Testimonial04 from "@/public/images/testimonial04.jpg";
 
 const testimonialList = [
   {
-    image: "/images/testimonial01.jpg",
+    image: Testimonial01,
     name: "มิ้นท์",
     role: "นักเขียนฟรีแลนซ์",
     text: '"เกิดประโยชน์เพราะหากให้เรานั่งทบทวนตัวเองหรือเขียนไดอารี่เฉยๆ เราคงไม่ได้สำรวจตนเองมากมายเท่าไหร่ แต่การมีข้อคำถามที่ช่วยไกด์ก็พาเราให้ไปรู้จักกับตนเองได้มากขึ้น เร้าให้เราได้มองถึงประสบการณ์ที่ผ่านมาหรือกำลังเผชิญอยู่ ด้วยทิศทางที่เป็นบวกมากขึ้น - ตัวเรา 9 ชีวิต"',
   },
   {
-    image: "/images/testimonial02.jpg",
+    image: Testimonial02,
     name: "แองจี้",
     role: "นักศึกษา",
   },
   {
-    image: "/images/testimonial03.jpg",
+    image: Testimonial03,
     name: "ดิว",
     role: "นักศึกษา",
   },
   {
-    image: "/images/testimonial04.jpg",
+    image: Testimonial04,
     name: "ต้า",
     role: "พนักงานเอกชน",
   },
@@ -27,29 +34,20 @@ const testimonialList = [
 
 const Testimonial = () => {
   return (
-    <section className="w-full max-w-[1080px] min-w-[360px] min-h-[600px] mx-auto my-4 relative flex flex-col items-center gap-8 justify-center py-8">
+    <section className="w-full max-w-[1080px] mx-auto my-4 relative flex flex-col items-center gap-8 justify-center py-8">
       <h1 className="font-bold text-3xl">Praise for Mindset Maker</h1>
-      <div className="flex justify-around gap-8 mb-20">
-        <Image
-          src="/images/preview_1.jpg"
-          width={360}
-          height={360}
-          alt="Preview 1"
-        />
-        <Image
-          src="/images/preview_2.jpg"
-          width={360}
-          height={360}
-          alt="Preview 2"
-        />
-        <Image
-          src="/images/preview_3.jpg"
-          width={360}
-          height={360}
-          alt="Preview 3"
-        />
-      </div>
-      <div>
+      <ul className="flex flex-row flex-wrap justify-center gap-4 mb-20 px-8">
+        <li className="max-w-72">
+          <Image src={PreviewTestimonial01} alt="Preview 1" />
+        </li>
+        <li className="max-w-72">
+          <Image src={PreviewTestimonial02} alt="Preview 2" />
+        </li>
+        <li className="max-w-72">
+          <Image src={PreviewTestimonial03} alt="Preview 3" />
+        </li>
+      </ul>
+      <div className="hidden">
         <ul className="flex gap-4">
           {testimonialList.map((item) => (
             <li
